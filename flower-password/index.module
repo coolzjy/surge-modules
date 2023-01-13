@@ -1,0 +1,5 @@
+#!name=花密
+#!desc=生成花密密码
+
+[Script]
+花密 = type=http-request,pattern=^http:\/\/fp\.zjy\.name,script-path=https://coolzjy.github.io/surge-modules/flower-password/index.js,script-update-interval=0
