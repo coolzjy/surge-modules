@@ -17,6 +17,10 @@ for (let i = 0; i < responses.length; i++) {
     body.privacySettings = [];
   }
 
+  if (body.timerBoostConfig != null) {
+    body.timerBoostConfig.timerBoosts = 10;
+  }
+
   response.body = JSON.stringify(body);
 }
 
