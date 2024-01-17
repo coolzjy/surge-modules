@@ -21,7 +21,7 @@ for (let i = 0; i < responses.length; i++) {
 
   // fill timer boost
   if (body.timerBoostConfig != null) {
-    body.timerBoostConfig.timerBoosts = 1;
+    body.timerBoostConfig.timerBoosts = 10;
     body.timerBoostConfig.timePerBoost = 120;
   }
 
