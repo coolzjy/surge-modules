@@ -5,4 +5,4 @@
 hostname = %APPEND% api2.duolingo.cn, api2.duolingo.com, ios-api-2.duolingo.cn, ios-api-2.duolingo.com
 
 [Script]
-解锁 Duolingo = type=http-response,pattern=^https:\/\/(ios-api-2|api2)\.duolingo\.(cn|com)\/2017-06-30\/batch,requires-body=1,script-path=https://coolzjy.github.io/surge-modules/unlock-duolingo/index.js,script-update-interval=0
+解锁 Duolingo = type=http-response,pattern=^https:\/\/(ios-api-2|api2)\.duolingo\.(cn|com)\/(2017-06-30|2023-05-23)\/batch,requires-body=1,script-path=https://coolzjy.github.io/surge-modules/unlock-duolingo/index.js,script-update-interval=0
