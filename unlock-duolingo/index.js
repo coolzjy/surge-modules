@@ -5,7 +5,7 @@ for (let i = 0; i < responses.length; i++) {
   const response = responses[i];
   const { status, body: raw } = response;
 
-  if (status !== 200 || raw == null || raw === "" || !raw.includes("plusStatus")) continue;
+  if (status !== 200 || raw == null || raw === "" || (!raw.includes("plusStatus") && !raw.includes("subscriberLevel"))) continue;
   
   const body = JSON.parse(raw);
 
@@ -14,9 +14,8 @@ for (let i = 0; i < responses.length; i++) {
     body.plusStatus = "PLUS";
   }
 
-  // enable unlimit hearts
-  if (body.health != null) {
-    body.health.unlimitedHeartsAvailable = true
+  if (body.subscriberLevel === "FREE") {
+    body.subscriberLevel = "PREMIUM"
   }
 
   // fill timer boost
