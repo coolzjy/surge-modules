@@ -1,0 +1,8 @@
+#!name=知乎网页版
+#!desc=恢复知乎网页版功能
+
+[MITM]
+hostname = %APPEND% *.zhihu.com
+
+[Script]
+知乎 = type=http-response,pattern=^https:\/\/www\.zhihu\.com\/question.*$,requires-body=1,max-size=-1,script-path=https://gist.githubusercontent.com/coolzjy/9cfab4bf2e00a42c8dd9e368ab323534/raw/bfd624fd5542b5cdce46540ffd41d1f568d2cb73/change-zhihu-user-agent.js,script-update-interval=0
