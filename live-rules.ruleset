@@ -1,0 +1,14 @@
+# 屏蔽常用 App 中的直播功能
+
+# 京东直播
+DOMAIN,discover.300hu.com
+DOMAIN,zt-pull-las.jdcloud.com
+
+# 淘宝直播
+AND,((DEST-PORT,1106), (PROTOCOL,UDP))
+URL-REGEX,\/(media|live)platform\/
+DOMAIN,impaas.alicdn.com
+
+# 美团直播
+DOMAIN-WILDCARD,*-live.meituan.net
+URL-REGEX,\/mtlr\/.*\.flv
