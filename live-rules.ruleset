@@ -2,7 +2,8 @@
 
 # 京东直播
 DOMAIN,discover.300hu.com
-DOMAIN-WILDCARD,*-las.jd.com
+DOMAIN,jdpull.jd.com
+DOMAIN,jdpull-las.jd.com
 DOMAIN-WILDCARD,*-las.jdcloud.com
 DOMAIN,live-lottie.s3.cn-north-1.jdcloud-oss.com
 
