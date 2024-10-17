@@ -11,6 +11,7 @@ DOMAIN,live-lottie.s3.cn-north-1.jdcloud-oss.com
 AND,((DEST-PORT,1106), (PROTOCOL,UDP))
 URL-REGEX,\/(media|live)platform\/
 DOMAIN,impaas.alicdn.com
+DOMAIN,live-spare.alicdn.com
 
 # 美团直播
 DOMAIN,onelive-screen-cdn.meituan.net
