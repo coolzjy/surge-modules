@@ -2,7 +2,9 @@
 
 # 京东直播
 DOMAIN,discover.300hu.com
-DOMAIN,zt-pull-las.jdcloud.com
+DOMAIN-WILDCARD,*-las.jd.com
+DOMAIN-WILDCARD,*-las.jdcloud.com
+DOMAIN,live-lottie.s3.cn-north-1.jdcloud-oss.com
 
 # 淘宝直播
 AND,((DEST-PORT,1106), (PROTOCOL,UDP))
