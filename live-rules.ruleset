@@ -13,5 +13,6 @@ URL-REGEX,\/(media|live)platform\/
 DOMAIN,impaas.alicdn.com
 
 # 美团直播
+DOMAIN,onelive-screen-cdn.meituan.net
 DOMAIN-WILDCARD,*-live.meituan.net
 URL-REGEX,\/mtlr\/.*\.flv
