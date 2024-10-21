@@ -9,7 +9,7 @@ DOMAIN,live-lottie.s3.cn-north-1.jdcloud-oss.com
 
 # 淘宝直播
 AND,((DEST-PORT,1106), (PROTOCOL,UDP))
-URL-REGEX,\/(media|live)platform\/
+URL-REGEX,\/(media|live)platform(_record)?\/
 DOMAIN,impaas.alicdn.com
 DOMAIN,live-spare.alicdn.com
 
