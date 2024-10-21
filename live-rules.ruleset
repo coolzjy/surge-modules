@@ -4,14 +4,15 @@
 DOMAIN,discover.300hu.com
 DOMAIN,jdpull.jd.com
 DOMAIN,jdpull-las.jd.com
-DOMAIN-WILDCARD,*-las.jdcloud.com
 DOMAIN,live-lottie.s3.cn-north-1.jdcloud-oss.com
+DOMAIN,quicpro.jd.com
+DOMAIN-WILDCARD,*-las.jdcloud.com
 
 # 淘宝直播
 AND,((DEST-PORT,1106), (PROTOCOL,UDP))
-URL-REGEX,\/(media|live)platform(_record)?\/
 DOMAIN,impaas.alicdn.com
 DOMAIN,live-spare.alicdn.com
+URL-REGEX,\/(media|live)platform(_record)?\/
 
 # 美团直播
 DOMAIN,onelive-screen-cdn.meituan.net
