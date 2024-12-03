@@ -1,0 +1,8 @@
+#!name=Duolingo 经验奖励
+#!desc=开启 Duolingo 三倍经验奖励
+
+[MITM]
+hostname = %APPEND% api2.duolingo.cn, api2.duolingo.com, ios-api-2.duolingo.cn, ios-api-2.duolingo.com
+
+[Script]
+Duolingo Bonus = type=http-request,pattern=https:\/\/api2\.duolingo\.cn\/2023-05-23\/sessions\/.*,requires-body=1,max-size=0,script-path=https://coolzjy.github.io/surge-modules/duolingo-bonus/index.js,script-update-interval=0
