@@ -1,0 +1,9 @@
+#!name=Duolingo
+#!desc=Duolingo Super 解锁, Doulingo 三倍经验
+
+[MITM]
+hostname = %APPEND% api2.duolingo.cn, api2.duolingo.com, ios-api-2.duolingo.cn, ios-api-2.duolingo.com
+
+[Script]
+Duolingo Super 解锁=type=http-response,script-path=https://coolzjy.github.io/surge-modules/duolingo/super.js,script-update-interval=86400,engine=webview,pattern=^https:\/\/(ios-api-2|api2)\.duolingo\.(cn|com)\/(2017-06-30|2023-05-23)\/batch,requires-body=1,max-size=-1
+Doulingo 三倍经验=type=http-request,script-path=https://coolzjy.github.io/surge-modules/duolingo/bonus.js,script-update-interval=86400,engine=jsc,pattern=^https:\/\/(ios-api-2|api2)\.duolingo\.(cn|com)\/2023-05-23\/sessions\/.*,requires-body=1,max-size=-1,
