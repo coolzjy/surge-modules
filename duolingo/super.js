@@ -1,1 +1,1 @@
-$done({ body: $response.body.replace('FREE', 'PREMIUM') });
+$done({ body: $response.body.replaceAll('FREE', 'PREMIUM') });
